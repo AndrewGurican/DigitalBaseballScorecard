@@ -17,27 +17,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8jh-hO-9hp">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8jh-hO-9hp">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
                                     <navigationItem title="Digital Baseball Scorecard by Andrew Gurican" id="9wd-Rv-duK"/>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7Q-qz-7lQ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7Q-qz-7lQ">
                                 <rect key="frame" x="246" y="247" width="108" height="30"/>
                                 <state key="normal" title="Load Scorecard"/>
                                 <connections>
                                     <segue destination="xvX-95-Df9" kind="presentation" id="GZl-22-lK2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66h-PQ-akG">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66h-PQ-akG">
                                 <rect key="frame" x="241" y="285" width="119" height="30"/>
                                 <state key="normal" title="Delete Scorecard"/>
                                 <connections>
                                     <segue destination="K9s-qc-YPr" kind="presentation" id="adQ-pD-j35"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ede-sj-vBO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ede-sj-vBO">
                                 <rect key="frame" x="248" y="209" width="105" height="30"/>
                                 <state key="normal" title="New Scorecard"/>
                                 <connections>
@@ -46,11 +46,22 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="I7Q-qz-7lQ" firstAttribute="centerX" secondItem="66h-PQ-akG" secondAttribute="centerX" id="3wy-Vu-tpj"/>
+                            <constraint firstAttribute="trailing" secondItem="8jh-hO-9hp" secondAttribute="trailing" id="4J6-1P-1fU"/>
+                            <constraint firstItem="66h-PQ-akG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Auk-gy-HwU"/>
+                            <constraint firstItem="I7Q-qz-7lQ" firstAttribute="top" secondItem="ede-sj-vBO" secondAttribute="bottom" constant="8" symbolic="YES" id="Ghv-1D-Yf9"/>
+                            <constraint firstItem="8jh-hO-9hp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IgZ-2n-1Qj"/>
+                            <constraint firstItem="8jh-hO-9hp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="JJO-cX-ncf"/>
+                            <constraint firstItem="8jh-hO-9hp" firstAttribute="centerX" secondItem="ede-sj-vBO" secondAttribute="centerX" id="g5O-hR-IRL"/>
+                            <constraint firstItem="66h-PQ-akG" firstAttribute="top" secondItem="I7Q-qz-7lQ" secondAttribute="bottom" constant="8" symbolic="YES" id="lkQ-hC-3jF"/>
+                            <constraint firstItem="ede-sj-vBO" firstAttribute="centerX" secondItem="I7Q-qz-7lQ" secondAttribute="centerX" id="y5n-ph-a7j"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="336" y="437"/>
+            <point key="canvasLocation" x="382" y="390"/>
         </scene>
         <!--Delete Scorecard-->
         <scene sceneID="pao-pl-7AO">
@@ -64,29 +75,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QPA-qI-Chq">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QPA-qI-Chq">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
                                     <navigationItem title="Delete Scorecard" id="CaC-GE-aH6">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="riZ-Hz-frb"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="riZ-Hz-frb">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="presentation" id="Hee-Pn-I5f"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3g8-QE-abV">
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="3g8-QE-abV">
                                 <rect key="frame" x="0.0" y="64" width="600" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Mb-XL-MlC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Mb-XL-MlC">
                                 <rect key="frame" x="249" y="468" width="104" height="30"/>
                                 <state key="normal" title="Confirm Delete"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nzC-0I-4eg" firstAttribute="top" secondItem="1Mb-XL-MlC" secondAttribute="bottom" constant="102" id="30N-EQ-FSR"/>
+                            <constraint firstItem="QPA-qI-Chq" firstAttribute="leading" secondItem="3g8-QE-abV" secondAttribute="leading" id="Olf-Uz-ApW"/>
+                            <constraint firstItem="1Mb-XL-MlC" firstAttribute="leading" secondItem="8gV-xb-Ias" secondAttribute="leading" constant="249" id="Qml-Mb-pVo"/>
+                            <constraint firstItem="QPA-qI-Chq" firstAttribute="trailing" secondItem="3g8-QE-abV" secondAttribute="trailing" id="TyK-K3-706"/>
+                            <constraint firstItem="3g8-QE-abV" firstAttribute="top" secondItem="QPA-qI-Chq" secondAttribute="bottom" id="dEo-oN-xAK"/>
+                            <constraint firstItem="QPA-qI-Chq" firstAttribute="top" secondItem="KfC-cB-ZKW" secondAttribute="bottom" id="dpn-AS-jR3"/>
+                            <constraint firstItem="QPA-qI-Chq" firstAttribute="leading" secondItem="8gV-xb-Ias" secondAttribute="leading" id="iam-0N-Jsl"/>
+                            <constraint firstAttribute="trailing" secondItem="QPA-qI-Chq" secondAttribute="trailing" id="uVu-YK-BIU"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0pv-ex-QOg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-311" y="437"/>
+            <point key="canvasLocation" x="-528" y="390"/>
         </scene>
         <!--Load Scorecard-->
         <scene sceneID="bID-ih-ibQ">
@@ -100,29 +125,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ACA-U1-1IA">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ACA-U1-1IA">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
                                     <navigationItem title="Load Scorecard" id="JEN-17-kPe">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="lsr-3f-LC2"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="lsr-3f-LC2">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="presentation" id="Dq3-2d-kTa"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a1c-eb-Lna">
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="a1c-eb-Lna">
                                 <rect key="frame" x="0.0" y="64" width="600" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFw-a9-CT9">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFw-a9-CT9">
                                 <rect key="frame" x="254" y="464" width="93" height="30"/>
                                 <state key="normal" title="Confirm Load"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ACA-U1-1IA" firstAttribute="top" secondItem="O24-QT-StJ" secondAttribute="bottom" id="6dJ-RR-A1k"/>
+                            <constraint firstItem="ACA-U1-1IA" firstAttribute="leading" secondItem="a1c-eb-Lna" secondAttribute="leading" id="Hco-FM-ANs"/>
+                            <constraint firstItem="ypz-Tu-n3a" firstAttribute="top" secondItem="IFw-a9-CT9" secondAttribute="bottom" constant="106" id="LZf-cL-fq7"/>
+                            <constraint firstItem="a1c-eb-Lna" firstAttribute="top" secondItem="ACA-U1-1IA" secondAttribute="bottom" id="QJq-cq-EBS"/>
+                            <constraint firstAttribute="trailing" secondItem="ACA-U1-1IA" secondAttribute="trailing" id="eae-te-LS9"/>
+                            <constraint firstItem="ACA-U1-1IA" firstAttribute="trailing" secondItem="a1c-eb-Lna" secondAttribute="trailing" id="jRp-uL-lmz"/>
+                            <constraint firstItem="a1c-eb-Lna" firstAttribute="centerX" secondItem="IFw-a9-CT9" secondAttribute="centerX" id="jYQ-xd-ruz"/>
+                            <constraint firstItem="ACA-U1-1IA" firstAttribute="leading" secondItem="LDZ-Kt-rim" secondAttribute="leading" id="w1m-bb-SYL"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q1d-xr-3nI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-311" y="1146"/>
+            <point key="canvasLocation" x="-528" y="1178"/>
         </scene>
         <!--Editor Options-->
         <scene sceneID="ehT-wt-Wk8">
@@ -135,12 +174,49 @@
                     <view key="view" contentMode="scaleToFill" id="yuO-Df-QLd">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TqU-f4-gbc">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Editor Options" id="c5O-mJ-iWM">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="UjX-U7-21B">
+                                            <connections>
+                                                <segue destination="AN3-rQ-hbj" kind="presentation" id="tAC-gb-DaG"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nj9-Xg-CTm">
+                                <rect key="frame" x="246" y="110" width="108" height="30"/>
+                                <state key="normal" title="Save Scorecard"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psh-ur-nbC">
+                                <rect key="frame" x="216" y="148" width="168" height="30"/>
+                                <state key="normal" title="Change Scorecard Color"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ir1-cF-pRg">
+                                <rect key="frame" x="244" y="186" width="113" height="30"/>
+                                <state key="normal" title="Another Option?"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ir1-cF-pRg" firstAttribute="top" secondItem="psh-ur-nbC" secondAttribute="bottom" constant="8" symbolic="YES" id="52o-Qr-qbt"/>
+                            <constraint firstAttribute="trailing" secondItem="TqU-f4-gbc" secondAttribute="trailing" id="JmK-zx-aBt"/>
+                            <constraint firstItem="TqU-f4-gbc" firstAttribute="leading" secondItem="yuO-Df-QLd" secondAttribute="leading" id="Ony-12-PFH"/>
+                            <constraint firstItem="Nj9-Xg-CTm" firstAttribute="top" secondItem="TqU-f4-gbc" secondAttribute="bottom" constant="46" id="Unx-zd-Uif"/>
+                            <constraint firstItem="psh-ur-nbC" firstAttribute="centerX" secondItem="Ir1-cF-pRg" secondAttribute="centerX" id="aFU-Np-Of8"/>
+                            <constraint firstItem="psh-ur-nbC" firstAttribute="top" secondItem="Nj9-Xg-CTm" secondAttribute="bottom" constant="8" symbolic="YES" id="c3K-6l-OJE"/>
+                            <constraint firstItem="TqU-f4-gbc" firstAttribute="centerX" secondItem="Nj9-Xg-CTm" secondAttribute="centerX" id="e5P-MW-QE8"/>
+                            <constraint firstItem="Nj9-Xg-CTm" firstAttribute="centerX" secondItem="psh-ur-nbC" secondAttribute="centerX" id="lDg-ZJ-VsL"/>
+                            <constraint firstItem="TqU-f4-gbc" firstAttribute="top" secondItem="or7-ys-L9L" secondAttribute="bottom" id="oyq-A1-4MM"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yuQ-bk-A7k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="336" y="1146"/>
+            <point key="canvasLocation" x="382" y="1178"/>
         </scene>
         <!--Scorecard Editor-->
         <scene sceneID="atU-Jh-HR4">
@@ -154,8 +230,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KEU-bt-89q">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KEU-bt-89q">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="lof-2T-5yf"/>
+                                </constraints>
                                 <items>
                                     <navigationItem title="(Scorecard Name Here)" id="1h0-PL-ae6">
                                         <barButtonItem key="leftBarButtonItem" title="Options" id="kPm-ZS-JrQ">
@@ -163,17 +242,34 @@
                                                 <segue destination="fWW-4I-rZk" kind="presentation" id="lU0-HC-xiw"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Menu" id="eXm-Xt-jt7">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="presentation" id="EaL-TV-cvo"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BaseballScorecard.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="MOY-ks-d3W">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KEU-bt-89q" firstAttribute="leading" secondItem="MOY-ks-d3W" secondAttribute="leading" id="5iv-8K-eDl"/>
+                            <constraint firstItem="MOY-ks-d3W" firstAttribute="bottom" secondItem="lQU-g6-5h5" secondAttribute="top" id="LGU-va-3FH"/>
+                            <constraint firstItem="KEU-bt-89q" firstAttribute="leading" secondItem="gsI-e3-9NK" secondAttribute="leading" id="Pcd-k1-WhB"/>
+                            <constraint firstItem="KEU-bt-89q" firstAttribute="top" secondItem="osu-0N-FMt" secondAttribute="bottom" id="VXH-Or-dM0"/>
+                            <constraint firstItem="KEU-bt-89q" firstAttribute="trailing" secondItem="MOY-ks-d3W" secondAttribute="trailing" id="WpX-6K-gIs"/>
+                            <constraint firstItem="MOY-ks-d3W" firstAttribute="top" secondItem="KEU-bt-89q" secondAttribute="bottom" id="cTc-WH-gTm"/>
+                            <constraint firstAttribute="trailing" secondItem="KEU-bt-89q" secondAttribute="trailing" id="oFC-28-uXO"/>
+                        </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1h3-78-UMY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1112" y="1146"/>
+            <point key="canvasLocation" x="1217" y="1178"/>
         </scene>
         <!--New Scorecard-->
         <scene sceneID="8CC-58-URF">
@@ -187,7 +283,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ags-Vb-dUG">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ags-Vb-dUG">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
                                     <navigationItem title="New Scorecard" id="C64-S6-SIw">
@@ -199,28 +295,52 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Og7-NC-hQr">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Og7-NC-hQr">
                                 <rect key="frame" x="204" y="182" width="192" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="192" id="jIY-NH-oSy"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scorecard Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyK-kP-joZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scorecard Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyK-kP-joZ">
                                 <rect key="frame" x="234" y="153" width="133" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kby-WP-xOy">
-                                <rect key="frame" x="218" y="230" width="164" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kby-WP-xOy">
+                                <rect key="frame" x="218" y="285" width="164" height="30"/>
                                 <state key="normal" title="Confirm New Scorecard"/>
+                                <connections>
+                                    <segue destination="AN3-rQ-hbj" kind="presentation" id="d39-85-A36"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kby-WP-xOy" firstAttribute="top" secondItem="Og7-NC-hQr" secondAttribute="bottom" constant="18" id="5pI-9Q-sHq"/>
+                            <constraint firstItem="Og7-NC-hQr" firstAttribute="centerX" secondItem="kby-WP-xOy" secondAttribute="centerX" id="BAm-Yg-LwX"/>
+                            <constraint firstItem="ags-Vb-dUG" firstAttribute="top" secondItem="s1d-iX-33f" secondAttribute="bottom" id="BER-cc-Z4l"/>
+                            <constraint firstItem="ags-Vb-dUG" firstAttribute="leading" secondItem="b7w-DG-k6g" secondAttribute="leading" id="BR6-43-DRZ"/>
+                            <constraint firstItem="gyK-kP-joZ" firstAttribute="centerX" secondItem="Og7-NC-hQr" secondAttribute="centerX" id="Dpx-J5-tee"/>
+                            <constraint firstAttribute="trailing" secondItem="ags-Vb-dUG" secondAttribute="trailing" id="Rhu-G1-uVV"/>
+                            <constraint firstItem="Og7-NC-hQr" firstAttribute="top" secondItem="gyK-kP-joZ" secondAttribute="bottom" constant="8" symbolic="YES" id="UJT-vP-s8u"/>
+                            <constraint firstItem="gyK-kP-joZ" firstAttribute="top" secondItem="ags-Vb-dUG" secondAttribute="bottom" constant="89" id="Wnt-cY-RiW"/>
+                            <constraint firstItem="ags-Vb-dUG" firstAttribute="centerX" secondItem="gyK-kP-joZ" secondAttribute="centerX" id="YkQ-jg-YcT"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CEq-cT-jeD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1112" y="437"/>
+            <point key="canvasLocation" x="1218" y="390"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BaseballScorecard.jpg" width="1048" height="641"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="d39-85-A36"/>
+        <segue reference="4OX-iD-1vZ"/>
+    </inferredMetricsTieBreakers>
 </document>

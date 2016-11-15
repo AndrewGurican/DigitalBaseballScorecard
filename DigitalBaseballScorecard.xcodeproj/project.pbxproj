@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		902BE8051DDA850300961A1B /* BaseballScorecard.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 902BE8041DDA850300961A1B /* BaseballScorecard.jpg */; };
 		906795881DD1301C008E2E64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906795871DD1301C008E2E64 /* AppDelegate.swift */; };
 		9067958A1DD1301C008E2E64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906795891DD1301C008E2E64 /* ViewController.swift */; };
 		9067958D1DD1301C008E2E64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9067958B1DD1301C008E2E64 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		902BE8041DDA850300961A1B /* BaseballScorecard.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BaseballScorecard.jpg; sourceTree = SOURCE_ROOT; };
 		906795841DD1301C008E2E64 /* DigitalBaseballScorecard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalBaseballScorecard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		906795871DD1301C008E2E64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		906795891DD1301C008E2E64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		906795861DD1301C008E2E64 /* DigitalBaseballScorecard */ = {
 			isa = PBXGroup;
 			children = (
+				902BE8041DDA850300961A1B /* BaseballScorecard.jpg */,
 				906795871DD1301C008E2E64 /* AppDelegate.swift */,
 				906795891DD1301C008E2E64 /* ViewController.swift */,
 				9067958B1DD1301C008E2E64 /* Main.storyboard */,
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				902BE8051DDA850300961A1B /* BaseballScorecard.jpg in Resources */,
 				906795951DD1301C008E2E64 /* LaunchScreen.storyboard in Resources */,
 				906795921DD1301C008E2E64 /* Assets.xcassets in Resources */,
 				9067958D1DD1301C008E2E64 /* Main.storyboard in Resources */,
@@ -292,6 +296,7 @@
 				9067959B1DD1301C008E2E64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
