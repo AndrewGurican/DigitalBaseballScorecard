@@ -15,6 +15,19 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var btnMenu: UIBarButtonItem!
     
+    @IBOutlet weak var btnNew: UIButton!
+    
+    @IBOutlet weak var btnLoad: UIButton!
+    
+    @IBOutlet weak var btnDelete: UIButton!
+    
+    @IBOutlet weak var btnConfirmDelete: UIButton!
+    
+    @IBOutlet weak var btnConfirmLoad: UIButton!
+    
+    @IBOutlet weak var btnConfirmNew: UIButton!
+    
+    
     //Header Outlets
     @IBOutlet weak var TeamNametxt: UITextField!
     
@@ -154,30 +167,88 @@ class ViewController: UIViewController {
     @IBOutlet weak var SubP3RBI: UITextField!
     
     //Player 4 Row Outlets
+    @IBOutlet weak var P4Num: UITextField!
     
+    @IBOutlet weak var Player4Nametxt: UITextField!
     
+    @IBOutlet weak var P4Positiontxt: UITextField!
     
+    @IBOutlet weak var SubP4Num: UITextField!
     
+    @IBOutlet weak var Substitute4Nametxt: UITextField!
     
+    @IBOutlet weak var SubP4Positiontxt: UITextField!
     
+    @IBOutlet weak var ResultP4i1: UITextField!
     
+    @IBOutlet weak var ResultP4i2: UITextField!
     
+    @IBOutlet weak var ResultP4i3: UITextField!
     
+    @IBOutlet weak var ResultP4i4: UITextField!
     
+    @IBOutlet weak var ResultP4i5: UITextField!
     
+    @IBOutlet weak var ResultP4i6: UITextField!
     
+    @IBOutlet weak var ResultP4i7: UITextField!
     
+    @IBOutlet weak var ResultP4i8: UITextField!
     
+    @IBOutlet weak var ResultP4i9: UITextField!
     
+    @IBOutlet weak var ResultP4i10: UITextField!
     
+    @IBOutlet weak var P4AB: UITextField!
     
+    @IBOutlet weak var SubP4AB: UITextField!
     
+    @IBOutlet weak var P4RBI: UITextField!
     
+    @IBOutlet weak var SubP4RBI: UITextField!
     
+    //Player 5 Row Outlets
+    @IBOutlet weak var P5Num: UITextField!
     
+    @IBOutlet weak var Player5Nametxt: UITextField!
     
+    @IBOutlet weak var P5Positiontxt: UITextField!
     
+    @IBOutlet weak var SubP5Num: UITextField!
     
+    @IBOutlet weak var Substitute5Nametxt: UITextField!
+    
+    @IBOutlet weak var SubP5Positiontxt: UITextField!
+    
+    @IBOutlet weak var ResultP5i5: UITextField!
+    
+    @IBOutlet weak var ResultP5i2: UITextField!
+    
+    @IBOutlet weak var ResultP5i1: UITextField!
+    
+    @IBOutlet weak var ResultP5i3: UITextField!
+    
+    @IBOutlet weak var ResultP5i4: UITextField!
+    
+    @IBOutlet weak var ResultP5i6: UITextField!
+    
+    @IBOutlet weak var ResultP5i7: UITextField!
+    
+    @IBOutlet weak var ResultP5i8: UITextField!
+    
+    @IBOutlet weak var ResultP5i9: UITextField!
+    
+    @IBOutlet weak var ResultP5i10: UITextField!
+    
+    @IBOutlet weak var P5AB: UITextField!
+    
+    @IBOutlet weak var SubP5AB: UITextField!
+    
+    @IBOutlet weak var P5RBI: UITextField!
+    
+    @IBOutlet weak var SubP5RBI: UITextField!
+    
+    //Player 6 Row Outlets
     
     
     

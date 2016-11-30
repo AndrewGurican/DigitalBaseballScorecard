@@ -59,6 +59,11 @@
                             <constraint firstItem="8jh-hO-9hp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tG2-dE-Im1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnDelete" destination="66h-PQ-akG" id="sGk-2d-zL8"/>
+                        <outlet property="btnLoad" destination="I7Q-qz-7lQ" id="yyQ-US-M29"/>
+                        <outlet property="btnNew" destination="ede-sj-vBO" id="Php-Kp-etl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,7 +72,7 @@
         <!--Delete Scorecard-->
         <scene sceneID="pao-pl-7AO">
             <objects>
-                <viewController title="Delete Scorecard" id="K9s-qc-YPr" sceneMemberID="viewController">
+                <viewController title="Delete Scorecard" id="K9s-qc-YPr" customClass="ViewController" customModule="DigitalBaseballScorecard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KfC-cB-ZKW"/>
                         <viewControllerLayoutGuide type="bottom" id="nzC-0I-4eg"/>
@@ -111,6 +116,9 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPadPro"/>
+                    <connections>
+                        <outlet property="btnConfirmDelete" destination="1Mb-XL-MlC" id="jiG-wo-Ahr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0pv-ex-QOg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -119,7 +127,7 @@
         <!--Load Scorecard-->
         <scene sceneID="bID-ih-ibQ">
             <objects>
-                <viewController title="Load Scorecard" id="xvX-95-Df9" sceneMemberID="viewController">
+                <viewController title="Load Scorecard" id="xvX-95-Df9" customClass="ViewController" customModule="DigitalBaseballScorecard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="O24-QT-StJ"/>
                         <viewControllerLayoutGuide type="bottom" id="ypz-Tu-n3a"/>
@@ -166,6 +174,9 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPadPro"/>
+                    <connections>
+                        <outlet property="btnConfirmLoad" destination="IFw-a9-CT9" id="9tV-tP-LOO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q1d-xr-3nI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1097,14 +1108,6 @@
                                     <outlet property="delegate" destination="AN3-rQ-hbj" id="3Kn-Pz-cGC"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Result" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fuK-O4-AKK">
-                                <rect key="frame" x="338" y="491" width="55" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="AN3-rQ-hbj" id="c3V-zQ-fqP"/>
-                                </connections>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Result" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tkd-CN-2Y3">
                                 <rect key="frame" x="338" y="563" width="55" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1421,8 +1424,8 @@
                                     <outlet property="delegate" destination="AN3-rQ-hbj" id="c2p-jw-uLB"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Result" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t0q-T1-sNA">
-                                <rect key="frame" x="711" y="491" width="55" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Result" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t0q-T1-sNA">
+                                <rect key="frame" x="338" y="491" width="55" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -2284,6 +2287,14 @@
                                     <outlet property="delegate" destination="AN3-rQ-hbj" id="XLT-an-r77"/>
                                 </connections>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Result" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fuK-O4-AKK">
+                                <rect key="frame" x="711" y="491" width="55" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="AN3-rQ-hbj" id="c3V-zQ-fqP"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -3065,9 +3076,19 @@
                         <outlet property="P3Num" destination="LOD-7u-zSG" id="4LC-RW-zOl"/>
                         <outlet property="P3Positiontxt" destination="z4u-gD-7F5" id="ZZu-Un-8Ep"/>
                         <outlet property="P3RBI" destination="u6K-7P-zah" id="cQH-h7-iCX"/>
+                        <outlet property="P4AB" destination="5Ot-DZ-2ey" id="puR-Np-82q"/>
+                        <outlet property="P4Num" destination="bjM-Li-faz" id="pg3-ey-6js"/>
+                        <outlet property="P4Positiontxt" destination="cXQ-rb-Kch" id="4sq-M3-2aQ"/>
+                        <outlet property="P4RBI" destination="QdK-0H-bXe" id="VCa-aM-qAq"/>
+                        <outlet property="P5AB" destination="g7y-me-4N4" id="Pbl-kM-S2u"/>
+                        <outlet property="P5Num" destination="caE-EM-0eK" id="XU8-03-EF2"/>
+                        <outlet property="P5Positiontxt" destination="NPr-j9-8DG" id="3jJ-Ad-cAP"/>
+                        <outlet property="P5RBI" destination="GKj-HS-4DF" id="kNp-TK-lj6"/>
                         <outlet property="Player1Nametxt" destination="b04-fb-V3Y" id="G7T-Rq-Ltq"/>
                         <outlet property="Player2Nametxt" destination="KOR-dB-2Ge" id="3Uo-Ie-cNy"/>
                         <outlet property="Player3Nametxt" destination="9nr-zY-WHO" id="GO9-u5-4gL"/>
+                        <outlet property="Player4Nametxt" destination="4eY-7j-LW4" id="gQK-Xg-cWm"/>
+                        <outlet property="Player5Nametxt" destination="RIk-1u-GS2" id="a7s-Cq-BFk"/>
                         <outlet property="ResultP1i1" destination="eBp-r8-FYg" id="rfl-Ju-8Ln"/>
                         <outlet property="ResultP1i10" destination="iVW-3c-gCE" id="QiG-JN-FId"/>
                         <outlet property="ResultP1i2" destination="BuB-bZ-8i2" id="ZsT-36-cQh"/>
@@ -3098,6 +3119,26 @@
                         <outlet property="ResultP3i7" destination="fAz-Yq-jL7" id="Kat-vX-4Rr"/>
                         <outlet property="ResultP3i8" destination="kAR-0o-IXH" id="78j-Ix-Xql"/>
                         <outlet property="ResultP3i9" destination="WZb-zz-r38" id="1L6-vr-Tk7"/>
+                        <outlet property="ResultP4i1" destination="jLv-WO-Tvc" id="QP9-7F-rqO"/>
+                        <outlet property="ResultP4i10" destination="a5h-aO-Wcz" id="3BH-Wf-LF1"/>
+                        <outlet property="ResultP4i2" destination="nk5-o5-WNc" id="aMS-TW-r4j"/>
+                        <outlet property="ResultP4i3" destination="fQi-yh-2uB" id="zVb-Vm-fNI"/>
+                        <outlet property="ResultP4i4" destination="W1h-lU-jZS" id="0No-8X-U3f"/>
+                        <outlet property="ResultP4i5" destination="9ej-Ez-OFr" id="jk8-hf-BoY"/>
+                        <outlet property="ResultP4i6" destination="p08-1k-mSL" id="itZ-2M-Hl9"/>
+                        <outlet property="ResultP4i7" destination="iqY-E6-6pR" id="769-NH-iQP"/>
+                        <outlet property="ResultP4i8" destination="gOR-gk-Wpy" id="dHm-K5-Xhs"/>
+                        <outlet property="ResultP4i9" destination="fyk-Wd-In8" id="MHH-UA-0qq"/>
+                        <outlet property="ResultP5i1" destination="t0q-T1-sNA" id="Ba6-6r-WAi"/>
+                        <outlet property="ResultP5i10" destination="uEN-Ca-WSa" id="DhL-Ye-l3u"/>
+                        <outlet property="ResultP5i2" destination="WxD-pg-fGs" id="hpn-ZA-zEf"/>
+                        <outlet property="ResultP5i3" destination="Z8E-0s-Qf1" id="vri-3d-na9"/>
+                        <outlet property="ResultP5i4" destination="yc8-8B-AjM" id="SJb-Cm-nhK"/>
+                        <outlet property="ResultP5i5" destination="fuK-O4-AKK" id="GUW-Zh-5R4"/>
+                        <outlet property="ResultP5i6" destination="0ZT-3N-6D4" id="QQb-8d-Nyp"/>
+                        <outlet property="ResultP5i7" destination="EIu-dB-Yao" id="X47-V4-KRE"/>
+                        <outlet property="ResultP5i8" destination="jnk-To-uDz" id="7bW-w7-QEb"/>
+                        <outlet property="ResultP5i9" destination="8Vt-Ol-9qL" id="MWn-dW-pbi"/>
                         <outlet property="StartTimetxt" destination="VH0-J0-OYm" id="djM-M4-lrf"/>
                         <outlet property="SubP1AB" destination="qoq-SB-czK" id="S2p-P7-UDe"/>
                         <outlet property="SubP1Num" destination="R9d-GM-Qpk" id="PBi-J1-YJq"/>
@@ -3111,9 +3152,19 @@
                         <outlet property="SubP3Num" destination="pX1-G3-6D0" id="oBD-kZ-lwn"/>
                         <outlet property="SubP3Positiontxt" destination="JLh-E0-7sY" id="66B-q1-1kQ"/>
                         <outlet property="SubP3RBI" destination="raY-1k-hfv" id="O3O-YG-Rkk"/>
+                        <outlet property="SubP4AB" destination="pwY-Pw-5jA" id="dcc-Kb-6HQ"/>
+                        <outlet property="SubP4Num" destination="w3R-dy-kiD" id="mFT-P7-Bic"/>
+                        <outlet property="SubP4Positiontxt" destination="fG4-eH-6RA" id="Hbc-U8-Hzc"/>
+                        <outlet property="SubP4RBI" destination="38u-Hq-6HB" id="FMG-pm-St2"/>
+                        <outlet property="SubP5AB" destination="YUm-fu-NKj" id="vqB-Uh-fUh"/>
+                        <outlet property="SubP5Num" destination="RWo-gP-Wpy" id="H3b-qZ-vXR"/>
+                        <outlet property="SubP5Positiontxt" destination="sEL-bk-Ljs" id="NSt-NS-2lb"/>
+                        <outlet property="SubP5RBI" destination="tjf-g4-Fc2" id="i8G-R8-qqE"/>
                         <outlet property="Substitute1Nametxt" destination="Bf1-pi-yRA" id="mbt-El-yxV"/>
                         <outlet property="Substitute2Nametxt" destination="itH-b2-09s" id="yJI-JY-NDd"/>
                         <outlet property="Substitute3Nametxt" destination="Siz-OZ-L23" id="Yo1-2M-NOZ"/>
+                        <outlet property="Substitute4Nametxt" destination="ISl-YA-qQd" id="0hl-ro-JJS"/>
+                        <outlet property="Substitute5Nametxt" destination="h09-iS-kn3" id="WWd-Ap-amK"/>
                         <outlet property="TeamNametxt" destination="SQA-8X-gGc" id="KQf-lg-IZf"/>
                         <outlet property="UmpireNametxt" destination="aic-xg-3sg" id="HvE-S7-Cuf"/>
                         <outlet property="btnMenu" destination="cay-cx-VZ1" id="S3k-md-fCg"/>
@@ -3127,7 +3178,7 @@
         <!--New Scorecard-->
         <scene sceneID="8CC-58-URF">
             <objects>
-                <viewController title="New Scorecard" id="U2H-MK-cdt" sceneMemberID="viewController">
+                <viewController title="New Scorecard" id="U2H-MK-cdt" customClass="ViewController" customModule="DigitalBaseballScorecard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="s1d-iX-33f"/>
                         <viewControllerLayoutGuide type="bottom" id="aX0-kf-kmA"/>
@@ -3188,6 +3239,9 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPadPro"/>
+                    <connections>
+                        <outlet property="btnConfirmNew" destination="kby-WP-xOy" id="YU9-JR-m2I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CEq-cT-jeD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3198,7 +3252,7 @@
         <image name="BaseballScorecard.jpg" width="1048" height="641"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Dq3-2d-kTa"/>
-        <segue reference="0Ge-zW-1ks"/>
+        <segue reference="d39-85-A36"/>
+        <segue reference="aOi-LS-nPf"/>
     </inferredMetricsTieBreakers>
 </document>
