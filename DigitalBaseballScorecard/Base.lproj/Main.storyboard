@@ -424,7 +424,7 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W7O-wY-JQg">
                                 <rect key="frame" x="0.0" y="20" width="1366" height="44"/>
                                 <items>
-                                    <navigationItem title="(Scorecard Name Here) (Start Delegates at Player 8 Row)" id="bPf-Rt-GOd">
+                                    <navigationItem title="(Scorecard Name Here)" id="bPf-Rt-GOd">
                                         <barButtonItem key="leftBarButtonItem" title="Save" id="axr-e2-AUq"/>
                                         <barButtonItem key="rightBarButtonItem" title="Menu" id="cay-cx-VZ1">
                                             <connections>
@@ -3254,7 +3254,7 @@
         <image name="BaseballScorecard.jpg" width="1048" height="641"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="aOi-LS-nPf"/>
         <segue reference="0Ge-zW-1ks"/>
-        <segue reference="Dq3-2d-kTa"/>
     </inferredMetricsTieBreakers>
 </document>
