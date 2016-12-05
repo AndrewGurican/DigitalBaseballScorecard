@@ -274,29 +274,7 @@ class ViewController: UIViewController {
     
     
     
-    //Add touchesBegan function to catch screen tap and resign keyboard
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        //Add Below Code from "Code for Steps.txt". Read Comments
-        
-        //forces resign first responder and hides keyboard
-        DeleteSearch.endEditing(true)
-        LoadSearch.endEditing(true)
-
-        
-        
-    }
-    
-    //Add DismissKeyboard function to resign keyboard on all textboxes
-    func DismissKeyboard(){
-        //Add Below Code from "Code for Steps.txt". Read Comments
-        
-        //forces resign first responder and hides keyboard
-        DeleteSearch.endEditing(true)
-        LoadSearch.endEditing(true)
-
-        
-        
-    }
+  
     
     //Add textFieldShouldReturn function. This is called when 'return' key pressed on any UITextField. return NO to ignore.
     func textFieldShouldReturn(textField: UITextField!) -> Bool     {
