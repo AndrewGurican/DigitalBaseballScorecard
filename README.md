@@ -1,7 +1,7 @@
 # DigitalBaseballScorecard
 Hello Baseball Fans! If you like to keep track of games, but you don't want to keep a big stack of papers and pens around, this app is for you.
 
-You can now develop save, load, and delete baseball scorecards you can personally edit on your iPad without paper and pen.
+You can now develop, save, load, and delete baseball scorecards that you can personally edit on your iPad without paper and pen.
 First, click new scorecard on the main menu, then name it and confirm your scorecard name.
 After that you can edit the team names, umpires, date, and time. 
 After that you can edit all common hitting statistics for your team.
