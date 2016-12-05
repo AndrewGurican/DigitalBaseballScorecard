@@ -117,6 +117,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPadPro"/>
                     <connections>
+                        <outlet property="DeleteSearch" destination="3g8-QE-abV" id="Du3-mC-bp8"/>
                         <outlet property="btnConfirmDelete" destination="1Mb-XL-MlC" id="jiG-wo-Ahr"/>
                     </connections>
                 </viewController>
@@ -175,6 +176,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPadPro"/>
                     <connections>
+                        <outlet property="LoadSearch" destination="a1c-eb-Lna" id="nOT-j9-odO"/>
                         <outlet property="btnConfirmLoad" destination="IFw-a9-CT9" id="9tV-tP-LOO"/>
                     </connections>
                 </viewController>
@@ -3252,7 +3254,7 @@
         <image name="BaseballScorecard.jpg" width="1048" height="641"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="d39-85-A36"/>
-        <segue reference="aOi-LS-nPf"/>
+        <segue reference="0Ge-zW-1ks"/>
+        <segue reference="Dq3-2d-kTa"/>
     </inferredMetricsTieBreakers>
 </document>

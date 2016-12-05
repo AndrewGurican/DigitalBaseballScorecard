@@ -27,6 +27,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var btnConfirmNew: UIButton!
     
+    @IBOutlet weak var DeleteSearch: UISearchBar!
+    
+    @IBOutlet weak var LoadSearch: UISearchBar!
     
     //Header Outlets
     @IBOutlet weak var TeamNametxt: UITextField!
@@ -260,6 +263,47 @@ class ViewController: UIViewController {
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //Add touchesBegan function to catch screen tap and resign keyboard
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        //Add Below Code from "Code for Steps.txt". Read Comments
+        
+        //forces resign first responder and hides keyboard
+        DeleteSearch.endEditing(true)
+        LoadSearch.endEditing(true)
+
+        
+        
+    }
+    
+    //Add DismissKeyboard function to resign keyboard on all textboxes
+    func DismissKeyboard(){
+        //Add Below Code from "Code for Steps.txt". Read Comments
+        
+        //forces resign first responder and hides keyboard
+        DeleteSearch.endEditing(true)
+        LoadSearch.endEditing(true)
+
+        
+        
+    }
+    
+    //Add textFieldShouldReturn function. This is called when 'return' key pressed on any UITextField. return NO to ignore.
+    func textFieldShouldReturn(textField: UITextField!) -> Bool     {
+        //Add Below Code from "Code for Steps.txt". Read Comments
+        textField.resignFirstResponder()
+        return true;
+    }
     
     
     override func viewDidLoad() {
